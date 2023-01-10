@@ -1,0 +1,152 @@
+    1  ip a
+    2  ssh 192.168.1.30
+    3  ssh-keygen 
+    4  ssh-copy-id 192.168.1.30
+    5  ssh-copy-id 192.168.1.31
+    6  ssh 192.168.1.30
+    7  cat > ansible.sh
+    8  ls
+    9  cat ansible.sh 
+   10  chmod +x ansible.sh 
+   11  ./ansible.sh 
+   12  sudo yum install -y python-pip python-wheel
+   13  python3 --version
+   14  python --version
+   15  sudo yum install -y python3-pip python3-wheel
+   16  python --version
+   17  python3 --version
+   18  python3 -m pip install ansible
+   19  vi requirement.txt
+   20  sudo python3 -m pip install --upgrade --force-reinstall pip
+   21  python3 -m pip install setuptools_rust
+   22  python3 -m pip install -r requirement.txt
+   23  python3 -m pip install ansible
+   24  ansible --version
+   25  hostnamectl set-hostname python3 -m pip install setuptools_rust
+   26  hostnamectl set-hostname controller
+   27  sudo hostnamectl set-hostname controller
+   28  hostname
+   29  sudo reboot
+   30  ansible -version
+   31  ansible --version
+   32  vi ansible.cfg
+   33  ansible --version
+   34  vi inventory.yml
+   35  ansible all -m ping
+   36  vi inventory.yml
+   37  ansible all -m ping
+   38  ssh-copy-id 192.168.1.29
+   39  ansible all -m ping
+   40  ansible 192.168.1.31 -m ping
+   41  ansible 192.168.1.31 -m command -a -b "hostnamectl set-hostname centos-agent-02 && reboot"
+   42  ansible 192.168.1.31 -m command -a  "hostnamectl set-hostname centos-agent-02 && reboot" -b
+   43  ansible 192.168.1.31 -m command -a  "hostnamectl set-hostname centos-agent-02" -b
+   44  ansible 192.168.1.31 -m command -a  "hostnamectl set-hostname centos-agent-01 ; reboot" -b
+   45  ansible 192.168.1.30 -m command -a  "hostnamectl set-hostname centos-agent-02" && "reboot" -b
+   46  ansible 192.168.1.30 -m command -a  "hostnamectl set-hostname centos-agent-01" -b
+   47  ansible agent -m command -a  "reboot" -b
+   48  ansible agent -m command -a  ""/sbin/shutdown -r +1"" -b
+   49  ansible agent -m command -a  "/sbin/shutdown -r +1" -b
+   50  ping 192.168.1.30
+   51  ansible agent -m command -a  "uptime" -b
+   52  ping 192.168.1.30
+   53  ping 192.168.1.31
+   54  ansible agent -m command -a  "uptime" -b
+   55  ansible agent -m command -a  "hostname" -b
+   56  ansible agent -m command -a  "cat /etc/hosts" -b
+   57  ansible agent -m copy -a  "src=/etc/hosts dest=/etc/hosts" -b
+   58  ansible agent -m command -a  "cat /etc/hosts" -b
+   59  ansible agent -m copy --args  "src=/etc/hosts dest=/etc/hosts" -b
+   60  ansible all -m command -a  "cat /etc/hosts" -b
+   61  cat >>/etc/hosts
+   62  sudo cat >> /etc/hosts
+   63  sudo cat /etc/hosts
+   64  sudo cat <<  /etc/hosts
+192.168.1.29 controller
+192.168.1.30 centos-agent-01
+192.168.1.31 centos-agent-02
+
+   65  sudo cat /etc/hosts
+   66  sudo cat >> /etc/hosts
+   67  sudo cat > /etc/hosts
+   68  sudo su
+   69  ansible agent -m copy -a  "src=/etc/hosts dest=/etc/hosts" -b
+   70  ansible all -m command -a  "cat /etc/hosts" -b
+   71  ping centos-agent-01
+   72  ping centos-agent-02
+   73  history
+   74  ansible all -m command -a  "cat /etc/hosts" -b
+   75  ls
+   76  cat inventory.yml 
+   77  vi inventory.yml 
+   78  ls
+   79  yum install -y git
+   80  vi firstpb.yml
+   81  ansible-playbook firstpb.yml 
+   82  git --version
+   83  pwd
+   84  git init
+   85  git status
+   86  git add ansible.cfg
+   87  git add ansible.sh
+   88  git add firstpb.yml 
+   89  git add inventory.yml 
+   90  git add requirement.txt 
+   91  git status
+   92  git commit -m "My first commit"
+   93  git config --global user.email "girish21180@gmail.com"
+   94  git commit -m "My first commit"
+   95  git branch --list
+   96  git branch ansible
+   97  git branch --list
+   98  git push -u origin ansible
+   99  git push -u ansible
+  100  git help push
+  101  history
+  102  ls
+  103  git status
+  104  git add .
+  105  git init
+  106  git add .
+  107  ping google.com
+  108  git remote -v
+  109  git remote add origin https://github.com/girish21180/ansible.git
+  110  git remote -v
+  111  git add .
+  112  git status
+  113  ls
+  114  du -sh
+  115  git commit -m "first commit"
+  116  git push
+  117  git config --global push.default simple
+  118  git push
+  119  git push --set-upstream origin master
+  120  ls -la
+  121  mkdir ansible
+  122  cp ansible.sh ansible.cfg inventory.yml requirement.txt ./ansible
+  123  cd ansible
+  124  ls
+  125  ls -la
+  126  du -sh
+  127  git status
+  128  git remote -v
+  129  git pull
+  130  git push
+  131  git remote add origin https://github.com/girish21180/ansible.git
+  132  git remote remove origin https://github.com/girish21180/ansible.git
+  133  git remote remove origin
+  134  git remote add origin https://github.com/girish21180/ansible.git
+  135  git status
+  136  git init
+  137  git status
+  138  git add .
+  139  git status
+  140  git commit -m "my first commit"
+  141  git push 
+  142  git remote -v
+  143  git remote add origin https://github.com/girish21180/ansible.git
+  144  git remote -v
+  145  git push
+  146  git push --set-upstream origin master
+  147  history
+  148  history > history.txt
